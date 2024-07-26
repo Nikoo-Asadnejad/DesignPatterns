@@ -2,18 +2,20 @@ namespace DesignPatterns;
 
 public class Product
 {
-    public string PartA { get; set; }
-    public string PartB { get; set; }
-    public string PartC { get; set; }
+    public string PartA { get; internal set; }
+    public string PartB { get; internal set; }
+    public string PartC { get; internal set; }
 }
-public interface IBuilder
+
+public interface IProductBuilder
 {
     void BuildPartA();
     void BuildPartB();
     void BuildPartC();
     Product GetProduct();
 }
-public class ConcreteBuilder : IBuilder
+
+public sealed class ProductBuilder : IProductBuilder
 {
     private Product _product = new Product();
 
@@ -40,11 +42,11 @@ public class ConcreteBuilder : IBuilder
     }
 }
 
-public class Director
+public sealed class Director
 {
-    private IBuilder _builder;
+    private IProductBuilder _builder;
 
-    public IBuilder Builder
+    public IProductBuilder Builder
     {
         set { _builder = value; }
     }
