@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/DesignPatterns/DesignPatterns.csproj": {}
+    "/Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/DesignPatterns.csproj": {}
   },
   "projects": {
-    "/Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/DesignPatterns/DesignPatterns.csproj": {
+    "/Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/DesignPatterns.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/DesignPatterns/DesignPatterns.csproj",
+        "projectUniqueName": "/Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/DesignPatterns.csproj",
         "projectName": "DesignPatterns",
-        "projectPath": "/Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/DesignPatterns/DesignPatterns.csproj",
+        "projectPath": "/Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/DesignPatterns.csproj",
         "packagesPath": "/Users/macbook/.nuget/packages/",
-        "outputPath": "/Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/DesignPatterns/obj/",
+        "outputPath": "/Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/macbook/.nuget/NuGet/NuGet.Config"

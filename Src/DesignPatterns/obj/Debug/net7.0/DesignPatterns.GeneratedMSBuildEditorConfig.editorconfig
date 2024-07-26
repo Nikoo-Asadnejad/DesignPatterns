@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DesignPatterns
-build_property.ProjectDir = /Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/DesignPatterns/
+build_property.ProjectDir = /Users/macbook/Projects/DesignPatterns/Src/DesignPatterns/
