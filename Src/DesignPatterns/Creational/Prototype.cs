@@ -16,7 +16,7 @@ public class ProductModel : IPrototype
 
     public IPrototype Clone()
     {
-        // Create a shallow copy
+        // Create a shallow copy, if you want deep copy you should implement custom logics
         return (IPrototype)this.MemberwiseClone();
     }
     
@@ -33,7 +33,7 @@ public class CategoryModel : IPrototype
 
     public IPrototype Clone()
     {
-        // Create a shallow copy
+        // Create a shallow copy , if you want deep copy you should implement custom logics
         return (IPrototype)this.MemberwiseClone();
     }
     
