@@ -4,9 +4,11 @@ using System;
 using System.Collections.Generic;
 
 
-   // The Mediator interface declares a method used by components to notify the
+    // The Mediator interface declares a method used by components to notify the
     // mediator about various events. The Mediator may react to these events and
     // pass the execution to other components.
+    //The Mediator pattern is a behavioral design pattern that aims to reduce the complexity of communication between multiple objects by introducing a mediator object.
+    //The mediator centralizes the communication logic, allowing objects (often referred to as “colleagues”) to interact indirectly through the mediator rather than directly with each other.
     public interface IMediator
     {
         void Notify(object sender, string ev);
