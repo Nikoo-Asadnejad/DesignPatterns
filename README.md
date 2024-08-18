@@ -3,6 +3,10 @@
 <h2>Creational Patterns:</h4>
 
 <h5>Singleton: </h5>
+<p>
+  The Singleton Pattern ensures a class has only one instance and provides a global point of access to that instance. It is one of the 
+  simplest design patterns, commonly used when exactly one object is needed to coordinate actions across the system.
+</p>
 <h5>Factory: </h5>
 <h5>Abstract Factory : </h5>
 <h5>Builder:  </h5>
