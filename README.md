@@ -8,6 +8,9 @@
   simplest design patterns, commonly used when exactly one object is needed to coordinate actions across the system.
 </p>
 <h5>Factory: </h5>
+<p>
+ The Factory Pattern is a creational design pattern to create objects without specifying the exact class of the object that will be created. Instead of using a direct constructor call to create an object, you use a factory method to produce an instance of the class. This pattern promotes loose coupling and makes the code more flexible and scalable.
+</p>
 <h5>Abstract Factory : </h5>
 <h5>Builder:  </h5>
 <h5>Prototype: </h5>
