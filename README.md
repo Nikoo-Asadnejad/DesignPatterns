@@ -55,7 +55,24 @@ When to Use the Composite Pattern:
 <li>When you need to work with tree structures, where you want to treat both individual objects and groups of objects in the same way.</li>
 
 <h5>Decorator:  </h5>
+
+<p>
+The Decorator pattern is a structural design pattern that allows you to dynamically add behavior or responsibilities to individual objects, either statically or at runtime, without affecting the behavior of other objects from the same class. It provides a flexible alternative to subclassing for extending functionality.
+</p>
+
+When to Use the Decorator Pattern:
+<li>When you need to add responsibilities to individual objects dynamically and in a flexible way.</li>
+<li>When subclassing would lead to a large number of classes due to the combinatorial explosion of possible feature combinations.</li>
+<li>When you want to enhance the functionality of objects without altering their structure or affecting other objects of the same class.</li>
+
 <h5>Facade: </h5>
+The Facade pattern is a structural design pattern that provides a simplified interface to a complex subsystem. It is used to hide the complexity of a system by providing a unified and simplified interface, making it easier for clients to interact with the subsystem without needing to understand its intricate details.
+
+When to Use the Facade Pattern:
+<li>When you need to provide a simplified and unified interface to a complex subsystem, making it easier to use.</li>
+<li>When you want to decouple a client from a complex subsystem, promoting loose coupling and reducing dependencies.</li>
+<li>When you want to improve the readability and maintainability of your code by hiding complex interactions behind a single interface.</li>
+ 
 <h5>Flyweight: </h5>
 <p>
 The Flyweight pattern is a structural design pattern that enables the efficient sharing of objects to support large numbers of fine-grained objects without incurring the overhead of storing a large amount of data. It is used to minimize memory usage and improve performance by sharing as much data as possible with similar objects, rather than keeping separate copies of data for each object.
