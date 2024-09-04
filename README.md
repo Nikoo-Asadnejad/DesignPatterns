@@ -12,10 +12,17 @@
  The Factory Pattern is a creational design pattern to create objects without specifying the exact class of the object that will be created. Instead of using a direct constructor call to create an object, you use a factory method to produce an instance of the class. This pattern promotes loose coupling and makes the code more flexible and scalable.
 </p>
 <h5>Abstract Factory : </h5>
+<p>
+The Abstract Factory pattern is a creational design pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes. It allows you to produce a variety of objects that are related by a common theme, without having to know or specify the exact classes of those objects.
+</p>
 <h5>Builder:  </h5>
+<p>
+The Builder pattern is a creational design pattern that provides a way to construct complex objects step by step. It allows you to produce different types and representations of an object using the same construction process. The Builder pattern is especially useful when the construction of an object requires many steps or when there are many possible configurations for the object.
+</p>
 <h5>Prototype: </h5>
-<h5>Flyweight: </h5>
-<h5>Proxy: </h5>
+<p>
+The Prototype pattern is a creational design pattern that allows you to create new objects by copying an existing object, known as a prototype, rather than by creating new instances through constructors. This pattern is particularly useful when the cost of creating a new object directly is expensive or complex.
+</p>
 
 
 <h2>Structural Patterns:</h4>
@@ -25,7 +32,29 @@
 <h5>Decorator:  </h5>
 <h5>Facade: </h5>
 <h5>Flyweight: </h5>
+<p>
+The Flyweight pattern is a structural design pattern that enables the efficient sharing of objects to support large numbers of fine-grained objects without incurring the overhead of storing a large amount of data. It is used to minimize memory usage and improve performance by sharing as much data as possible with similar objects, rather than keeping separate copies of data for each object.
+</p>
 <h5>Proxy: </h5>
+<p>
+The Proxy pattern is a structural design pattern that provides a surrogate or placeholder for another object to control access to it. The proxy object acts as an intermediary that represents the actual object, allowing you to add additional behavior or manage access to the original object without modifying its code.
+</p>
+
+When to Use the Proxy Pattern  :
+
+<li>When you need to control access to a resource or object, such as with access control or authorization.</li>
+<li>When you need to add additional behavior to an object, such as logging, caching, or lazy loading, without modifying the object itself.</li>
+<li>When the actual object is resource-intensive to create or use, and you want to delay its creation or initialization until it’s actually needed.</li>
+</br>
+
+Types of Proxies:
+<ol>
+  <li> Virtual Proxy: Manages the creation and initialization of expensive objects. It acts as a stand-in and creates the real object only when it is needed.</li>
+<li> Remote Proxy: Represents an object that exists in a different address space (e.g., a different machine or network). It handles communication between the client and the remote object. </li>
+<li>	Protection Proxy: Controls access to the real object, typically used for access control or authentication.</li>
+<li>	Smart Proxy: Adds additional behavior when accessing the real object, such as reference counting, logging, or access monitoring.</li>
+</ol>
+
 
 
 <h2>Behavioral Patterns:</h2>
