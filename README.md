@@ -27,6 +27,15 @@ The Prototype pattern is a creational design pattern that allows you to create n
 
 <h2>Structural Patterns:</h4>
 <h5>Adapter: </h5>
+<p>
+The Adapter pattern is a structural design pattern that allows incompatible interfaces to work together by converting the interface of a class into another interface that a client expects. This pattern acts as a bridge between two incompatible interfaces, making it possible for classes with different interfaces to collaborate.
+
+When to Use the Adapter Pattern:
+	<li> When you have existing classes that you need to reuse but their interfaces are incompatible with the rest of your code.</li>	
+	<li> When you want to create a reusable class that cooperates with unrelated or unforeseen classes, that is, classes that do not necessarily have compatible interfaces.</li>	
+	<li> When you need to use several existing subclasses but it’s impractical to adapt their interfaces by subclassing each one.</li>	
+ 
+</p>
 <h5>Bridge: </h5>
 <h5>Composite: </h5>
 <h5>Decorator:  </h5>
