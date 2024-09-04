@@ -37,7 +37,23 @@ When to Use the Adapter Pattern:
  
 </p>
 <h5>Bridge: </h5>
+<p>
+The Bridge pattern is a structural design pattern that separates an abstraction from its implementation, allowing them to vary independently. This pattern is used to decouple an abstraction from its implementation so that the two can evolve separately without affecting each other. By using the Bridge pattern, you can avoid a permanent binding between an abstraction and its implementation, making your code more flexible and scalable.
+
+ When to Use the Bridge Pattern:
+<li>When you want to avoid a permanent binding between an abstraction and its implementation, allowing both to vary independently.</li>
+<li>When you have a class explosion problem because you have multiple dimensions of variation (e.g., you have classes that can vary in multiple ways).</li>
+<li>When you want to share an implementation among multiple objects (using inheritance) and the inheritance hierarchy becomes too complex.</li>
+
+</p>
 <h5>Composite: </h5>
+The Composite pattern is a structural design pattern used to compose objects into tree-like structures to represent part-whole hierarchies. It allows you to treat individual objects and compositions of objects uniformly. The Composite pattern enables clients to work with complex tree structures (comprising both individual objects and compositions) as if they were single objects, simplifying the client code.
+
+When to Use the Composite Pattern:
+<li>When you need to represent part-whole hierarchies of objects.</li>
+<li>When you want clients to be able to ignore the difference between compositions of objects and individual objects.</li>
+<li>When you need to work with tree structures, where you want to treat both individual objects and groups of objects in the same way.</li>
+
 <h5>Decorator:  </h5>
 <h5>Facade: </h5>
 <h5>Flyweight: </h5>
