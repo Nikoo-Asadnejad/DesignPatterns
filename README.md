@@ -112,6 +112,10 @@ Types of Proxies:
 <h4>Command:</h4>
 <h4>Interpreter: </h4>
 <h4>Iterator:  </h4>
+<p>
+The Iterator pattern is a behavioral design pattern that provides a way to access elements of a collection (like a list, array, or any aggregate object) sequentially, without exposing the underlying structure of the collection. This pattern is useful when you want to traverse through a collection without worrying about how it’s implemented, whether it’s an array, a linked list, or some other structure.
+
+</p>
 <h4>Mediator: </h4>
 <p>
 The Mediator pattern is a behavioral design pattern that aims to reduce the complexity of communication between multiple objects by introducing a mediator object. 
