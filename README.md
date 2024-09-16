@@ -111,6 +111,26 @@ Types of Proxies:
 <h4>Chain of Responsibility: </h4>
 <h4>Command:</h4>
 <h4>Interpreter: </h4>
+<p>
+The Interpreter pattern is a behavioral design pattern that defines a representation for a language’s grammar and provides an interpreter to process sentences in that language. This pattern is typically used to interpret expressions from languages with a defined grammar, such as mathematical expressions or simple scripting languages.
+The pattern is most useful when you need to evaluate or process expressions that can be defined in terms of a language or grammar. It works well for small languages where defining formal grammar rules and interpreting them is straightforward.
+</p>
+
+Advantages of the Interpreter Pattern :
+- Flexibility: It provides an easy way to extend the grammar by adding new expression classes.
+- Modularity: Each rule in the grammar is represented by a different class, making the design modular and easy to maintain.
+- Reusability: Each expression (terminal or non-terminal) is reusable in different contexts and combinations.
+
+Disadvantages of the Interpreter Pattern :
+- Performance: It can become inefficient and slow if the language grammar is complex or the number of expressions grows large, as it requires recursive interpretation.
+- Scalability: The pattern works best for small, simple languages or expressions. As the grammar grows, the number of classes increases, leading to higher complexity.
+
+When to use Interpreter Pattern:
+-	Scripting languages: Small custom scripting languages where the grammar can be defined easily.
+- Compilers/Interpreters: Parts of compilers or interpreters that parse and execute expressions.
+- SQL/Mathematical Expression Evaluators: Systems that need to interpret mathematical formulas, queries, or commands.
+- Configuration/Rule Engines: Applications that allow users to define rules in a specific language and then interpret and execute them.
+
 <h4>Iterator:  </h4>
 <p>
 The Iterator pattern is a behavioral design pattern that provides a way to access elements of a collection (like a list, array, or any aggregate object) sequentially, without exposing the underlying structure of the collection. This pattern is useful when you want to traverse through a collection without worrying about how it’s implemented, whether it’s an array, a linked list, or some other structure.
