@@ -1,5 +1,33 @@
 # DesignPatterns
 
+Design patterns provide proven solutions to common software design problems. This repository is a comprehensive guide to understanding and applying design patterns using C#. 
+
+Design Patterns Covered :
+- Singleton: Ensure a class has only one instance and provide a global point of access to it.
+- Factory Method: Define an interface for creating an object, but let subclasses alter the type of objects that will be created.
+- Abstract Factory: Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+- Builder: Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+- Prototype: Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
+- Adapter: Convert the interface of a class into another interface clients expect.
+- Bridge: Decouple an abstraction from its implementation so that the two can vary independently.
+- Composite: Compose objects into tree structures to represent part-whole hierarchies.
+- Decorator: Attach additional responsibilities to an object dynamically.
+- Facade: Provide a unified interface to a set of interfaces in a subsystem.
+- Flyweight: Use sharing to support large numbers of fine-grained objects efficiently.
+- Proxy: Provide a surrogate or placeholder for another object to control access to it.
+- Chain of Responsibility: Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request.
+- Command: Encapsulate a request as an object, thereby allowing for parameterization of clients with different requests.
+- Interpreter: Define a representation for a language’s grammar along with an interpreter that uses the representation to interpret sentences.
+- Iterator: Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+- Mediator: Define an object that encapsulates how a set of objects interact.
+- Memento: Capture and externalize an object’s internal state so that the object can be restored to this state later.
+- Observer: Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated.
+-	State: Allow an object to alter its behavior when its internal state changes.
+-	Strategy: Define a family of algorithms, encapsulate each one, and make them interchangeable.
+-	Template Method: Define the skeleton of an algorithm in a method, deferring some steps to subclasses.
+-	Visitor: Represent an operation to be performed on elements of an object structure.
+
+
 <h2>Creational Patterns:</h4>
 
 <h4>Singleton: </h4>
