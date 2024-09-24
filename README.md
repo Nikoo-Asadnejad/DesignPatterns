@@ -186,6 +186,15 @@ The mediator centralizes the communication logic, allowing objects (often referr
 5.	Prevents Chaotic Interactions:
 <li>	In complex systems, having objects communicate freely can lead to chaotic and unpredictable behavior. The mediator enforces a structure, ensuring that communication follows certain rules and patterns.</li>
 <h4>Memento: </h4>
+The Memento design pattern is a behavioral design pattern that allows you to capture and store the current state of an object so that it can be restored later, without exposing the internal structure of that object. 
+It is typically used to implement undo mechanisms in applications.
+
+** Key Components:
+- Originator: The object whose state is being saved or restored. The Originator creates a Memento containing a snapshot of its current state.
+- Memento: Stores the internal state of the Originator. It doesn't expose its data to other objects, thus preserving encapsulation.
+- Caretaker: Manages the Memento. The Caretaker requests a Memento from the Originator and stores it, but does not access or modify the state. It later uses the Memento to restore the Originator to its previous state.
+
+
 <h4>Observer: </h4>
 <h4>State: </h4>
 <h4>Strategy: </h4>
