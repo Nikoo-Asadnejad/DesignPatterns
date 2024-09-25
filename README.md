@@ -199,6 +199,28 @@ It is typically used to implement undo mechanisms in applications.
 
 
 <h4>Observer: </h4>
+
+The Observer Pattern is a design pattern used in software engineering to establish a one-to-many dependency between objects. When the state of one object (the subject) changes, all its dependents (observers) are notified and updated automatically.
+
+### Key Components:
+
+1. **Subject**: The object being observed. It maintains a list of observers and provides methods to attach and detach them.
+
+2. **Observer**: An interface or abstract class defining the update method that will be called when the subject's state changes.
+
+3. **ConcreteSubject**: A concrete implementation of the subject that maintains its state and notifies observers of changes.
+
+4. **ConcreteObserver**: A concrete implementation of the observer that updates itself based on changes in the subject.
+
+### Use Cases:
+- User interface components (e.g., updating UI elements in response to data changes).
+- Event handling systems.
+- Real-time systems (e.g., stock market updates).
+
+### Benefits:
+- Promotes loose coupling between the subject and observers.
+- Enhances scalability and maintainability.
+
 <h4>State: </h4>
 <h4>Strategy: </h4>
 <h4>Template Method:  </h4>
