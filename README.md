@@ -53,35 +53,35 @@ Design Patterns Covered :
 
 ## Creational Patterns:
 
-<h4>Singleton: </h4>
+### Singleton: 
 <p>
   The Singleton Pattern ensures a class has only one instance and provides a global point of access to that instance. It is one of the 
   simplest design patterns, commonly used when exactly one object is needed to coordinate actions across the system.
 </p>
 
-<h4>Factory: </h4>
+### Factory: 
 <p>
  The Factory Pattern is a creational design pattern to create objects without specifying the exact class of the object that will be created. Instead of using a direct constructor call to create an object, you use a factory method to produce an instance of the class. This pattern promotes loose coupling and makes the code more flexible and scalable.
 </p>
 
-<h4>Abstract Factory : </h4>
+### Abstract Factory : 
 <p>
 The Abstract Factory pattern is a creational design pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes. It allows you to produce a variety of objects that are related by a common theme, without having to know or specify the exact classes of those objects.
 </p>
 
-<h4>Builder:  </h4>
+### Builder: 
 <p>
 The Builder pattern is a creational design pattern that provides a way to construct complex objects step by step. It allows you to produce different types and representations of an object using the same construction process. The Builder pattern is especially useful when the construction of an object requires many steps or when there are many possible configurations for the object.
 </p>
 
-<h4>Prototype: </h4>
+### Prototype: 
 <p>
 The Prototype pattern is a creational design pattern that allows you to create new objects by copying an existing object, known as a prototype, rather than by creating new instances through constructors. This pattern is particularly useful when the cost of creating a new object directly is expensive or complex.
 </p>
 
 
 ## Structural Patterns
-<h4>Adapter: </h4>
+### Adapter: 
 <p>
 The Adapter pattern is a structural design pattern that allows incompatible interfaces to work together by converting the interface of a class into another interface that a client expects. This pattern acts as a bridge between two incompatible interfaces, making it possible for classes with different interfaces to collaborate.
 </p>
@@ -92,7 +92,7 @@ When to Use the Adapter Pattern:
 <li> When you need to use several existing subclasses but it’s impractical to adapt their interfaces by subclassing each one.</li>	
  
 
-<h4>Bridge: </h4>
+### Bridge: 
 <p>
 The Bridge pattern is a structural design pattern that separates an abstraction from its implementation, allowing them to vary independently. This pattern is used to decouple an abstraction from its implementation so that the two can evolve separately without affecting each other. By using the Bridge pattern, you can avoid a permanent binding between an abstraction and its implementation, making your code more flexible and scalable.
 </p>
@@ -103,7 +103,7 @@ When to Use the Bridge Pattern:
 <li>When you want to share an implementation among multiple objects (using inheritance) and the inheritance hierarchy becomes too complex.</li>
 
 
-<h4>Composite: </h4>
+### Composite: 
 The Composite pattern is a structural design pattern used to compose objects into tree-like structures to represent part-whole hierarchies. It allows you to treat individual objects and compositions of objects uniformly. The Composite pattern enables clients to work with complex tree structures (comprising both individual objects and compositions) as if they were single objects, simplifying the client code.
 
 When to Use the Composite Pattern:
@@ -111,7 +111,7 @@ When to Use the Composite Pattern:
 <li>When you want clients to be able to ignore the difference between compositions of objects and individual objects.</li>
 <li>When you need to work with tree structures, where you want to treat both individual objects and groups of objects in the same way.</li>
 
-<h4>Decorator:  </h4>
+### Decorator: 
 
 <p>
 The Decorator pattern is a structural design pattern that allows you to dynamically add behavior or responsibilities to individual objects, either statically or at runtime, without affecting the behavior of other objects from the same class. It provides a flexible alternative to subclassing for extending functionality.
@@ -122,7 +122,7 @@ When to Use the Decorator Pattern:
 <li>When subclassing would lead to a large number of classes due to the combinatorial explosion of possible feature combinations.</li>
 <li>When you want to enhance the functionality of objects without altering their structure or affecting other objects of the same class.</li>
 
-<h4>Facade: </h4>
+### Facade:
 The Facade pattern is a structural design pattern that provides a simplified interface to a complex subsystem. It is used to hide the complexity of a system by providing a unified and simplified interface, making it easier for clients to interact with the subsystem without needing to understand its intricate details.
 
 When to Use the Facade Pattern:
@@ -130,12 +130,12 @@ When to Use the Facade Pattern:
 <li>When you want to decouple a client from a complex subsystem, promoting loose coupling and reducing dependencies.</li>
 <li>When you want to improve the readability and maintainability of your code by hiding complex interactions behind a single interface.</li>
  
-<h4>Flyweight: </h4>
+### Flyweight: 
 <p>
 The Flyweight pattern is a structural design pattern that enables the efficient sharing of objects to support large numbers of fine-grained objects without incurring the overhead of storing a large amount of data. It is used to minimize memory usage and improve performance by sharing as much data as possible with similar objects, rather than keeping separate copies of data for each object.
 </p>
 
-<h4>Proxy: </h4>
+### Proxy:
 <p>
 The Proxy pattern is a structural design pattern that provides a surrogate or placeholder for another object to control access to it. The proxy object acts as an intermediary that represents the actual object, allowing you to add additional behavior or manage access to the original object without modifying its code.
 </p>
@@ -159,9 +159,9 @@ Types of Proxies:
 
 ## Behavioral Patterns:</h2>
 
-<h4>Chain of Responsibility: </h4>
-<h4>Command:</h4>
-<h4>Interpreter: </h4>
+### Chain of Responsibility:
+### Command:
+### Interpreter: 
 <p>
 The Interpreter pattern is a behavioral design pattern that defines a representation for a language’s grammar and provides an interpreter to process sentences in that language. This pattern is typically used to interpret expressions from languages with a defined grammar, such as mathematical expressions or simple scripting languages.
 The pattern is most useful when you need to evaluate or process expressions that can be defined in terms of a language or grammar. It works well for small languages where defining formal grammar rules and interpreting them is straightforward.
@@ -182,12 +182,12 @@ When to use Interpreter Pattern:
 - SQL/Mathematical Expression Evaluators: Systems that need to interpret mathematical formulas, queries, or commands.
 - Configuration/Rule Engines: Applications that allow users to define rules in a specific language and then interpret and execute them.
 
-<h4>Iterator:  </h4>
+### Iterator: 
 <p>
 The Iterator pattern is a behavioral design pattern that provides a way to access elements of a collection (like a list, array, or any aggregate object) sequentially, without exposing the underlying structure of the collection. This pattern is useful when you want to traverse through a collection without worrying about how it’s implemented, whether it’s an array, a linked list, or some other structure.
 
 </p>
-<h4>Mediator: </h4>
+### Mediator:
 <p>
 The Mediator pattern is a behavioral design pattern that aims to reduce the complexity of communication between multiple objects by introducing a mediator object. 
 The mediator centralizes the communication logic, allowing objects (often referred to as “colleagues”) to interact indirectly through the mediator rather than directly with each other.
@@ -209,7 +209,7 @@ The mediator centralizes the communication logic, allowing objects (often referr
 5.	Prevents Chaotic Interactions:
 <li>	In complex systems, having objects communicate freely can lead to chaotic and unpredictable behavior. The mediator enforces a structure, ensuring that communication follows certain rules and patterns.</li>
 
-<h4>Memento: </h4>
+### Memento: 
 The Memento design pattern is a behavioral design pattern that allows you to capture and store the current state of an object so that it can be restored later, without exposing the internal structure of that object. 
 It is typically used to implement undo mechanisms in applications.
 
@@ -221,11 +221,11 @@ It is typically used to implement undo mechanisms in applications.
 - Caretaker: Manages the Memento. The Caretaker requests a Memento from the Originator and stores it, but does not access or modify the state. It later uses the Memento to restore the Originator to its previous state.
 
 
-<h4>Observer: </h4>
+### Observer: 
 
 The Observer Pattern is a design pattern used in software engineering to establish a one-to-many dependency between objects. When the state of one object (the subject) changes, all its dependents (observers) are notified and updated automatically.
 
-### Key Components:
+#### Key Components:
 
 1. **Subject**: The object being observed. It maintains a list of observers and provides methods to attach and detach them.
 
@@ -235,18 +235,18 @@ The Observer Pattern is a design pattern used in software engineering to establi
 
 4. **ConcreteObserver**: A concrete implementation of the observer that updates itself based on changes in the subject.
 
-### Use Cases:
+#### Use Cases:
 - User interface components (e.g., updating UI elements in response to data changes).
 - Event handling systems.
 - Real-time systems (e.g., stock market updates).
 
-### Benefits:
+#### Benefits:
 - Promotes loose coupling between the subject and observers.
 - Enhances scalability and maintainability.
 
-<h4>State: </h4>
-<h4>Strategy: </h4>
-<h4>Template Method:  </h4>
-<h4>Visitor:  </h4>
+### State: 
+### Strategy: 
+### Template Method:  
+### Visitor: 
 
 
