@@ -245,8 +245,17 @@ The Observer Pattern is a design pattern used in software engineering to establi
 - Enhances scalability and maintainability.
 
 ### State: 
+
 ### Strategy: 
+The Strategy Pattern is a behavioral design pattern that enables selecting an algorithm’s behavior at runtime. Instead of implementing a single algorithm directly, the code defines a family of algorithms, encapsulates each one as a separate class, and makes them interchangeable. The Strategy pattern lets you swap the algorithm or logic used within an object without altering the client code.
+
+#### Use Cases:
+- When you have multiple ways to perform a task and want to switch between them easily.
+- When you need to avoid conditional logic (if, switch) to select the algorithm.
+- When you want to separate the algorithm logic from the context (the object using the algorithm).
+  
 ### Template Method:  
+
 ### Visitor: 
 
 
