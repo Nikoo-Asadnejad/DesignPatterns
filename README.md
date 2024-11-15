@@ -245,6 +245,54 @@ The Observer Pattern is a design pattern used in software engineering to establi
 - Enhances scalability and maintainability.
 
 ### State: 
+The State pattern is a behavioral design pattern that allows an object to alter its behavior when its internal state changes. It provides a way to encapsulate state-specific behavior and delegate behavior changes to the state objects themselves.
+This pattern is particularly useful when an object can have multiple states, and its behavior needs to vary based on the current state. Instead of using a lot of conditional logic (e.g., if-else or switch statements), the State pattern organizes the behavior into separate state classes.
+
+#### Key Components :
+1.	**Context**:
+	-	The main class whose behavior changes based on its current state.
+	-	It holds a reference to a State object that represents its current state.
+2.	**State Interface**:
+	-	Defines a common interface for all possible states of the context.
+	-	Each state implements this interface to provide its specific behavior.
+3.	**Concrete States**:
+	-	These are the specific implementations of the State interface.
+	-	Each class represents a particular state and defines its behavior.
+
+#### Use Cases:
+1.	Game Development:
+	-	Characters with different states like Idle, Walking, Running, Attacking.
+	-	The state determines what actions the character can perform.
+2.	Traffic Light System:
+	-	A traffic light can be in Green, Yellow, or Red state.
+	-	The behavior of transitioning lights is encapsulated in the state classes.
+3.	Workflow Management:
+	-	A document can be in states like Draft, UnderReview, Approved.
+	-	Actions like editing, submitting, or publishing depend on the current state.
+4.	Vending Machine:
+	-	States like Idle, HasMoney, DispensingItem, OutOfStock.
+	-	Each state controls valid operations for the vending machine.
+5.	Authentication Flow:
+	-	States such as LoggedOut, LoggedIn, Locked.
+	-	Actions like Login, Logout, or Lock depend on the current state.
+
+#### Benefits :
+- Open/Closed Principle: Adding new states does not require changing the existing state logic.
+- Simplifies Context Class: The context delegates the behavior to state objects, reducing its responsibilities.
+- Easier to Understand: Each state has its own class, making it easier to manage and maintain.
+
+#### Drawbacks :
+
+- Increased Number of Classes: Each state requires a separate class, which can increase the complexity of the codebase.
+- Tight Coupling: Context and state classes are tightly coupled, as context often needs to know about all states.
+- Overhead: If there are very few states or if state transitions are rare, the overhead of implementing this pattern might not be justified.
+
+#### When to Use: 
+-	When an object’s behavior depends on its state and changes dynamically.
+-	When you need to eliminate large if-else or switch statements for state-dependent behavior.
+-	When state-specific behavior needs to be reused or extended easily.
+
+
 
 ### Strategy: 
 The Strategy Pattern is a behavioral design pattern that enables selecting an algorithm’s behavior at runtime. Instead of implementing a single algorithm directly, the code defines a family of algorithms, encapsulates each one as a separate class, and makes them interchangeable. The Strategy pattern lets you swap the algorithm or logic used within an object without altering the client code.
