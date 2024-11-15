@@ -257,5 +257,14 @@ The Strategy Pattern is a behavioral design pattern that enables selecting an al
 ### Template Method:  
 
 ### Visitor: 
+The Visitor pattern is a behavioral design pattern that allows you to add further operations to objects without modifying their structure. It does this by separating operations from the objects on which they operate. The pattern involves creating a Visitor interface with visit methods for each type in an object structure. Classes that want to support new operations “accept” a visitor, allowing it to perform actions on them. This pattern is especially useful when you want to add new operations to classes that have an existing hierarchy without modifying the classes themselves.
+
+#### Key Components :
+
+1.	Visitor Interface: Defines methods for each concrete type in the hierarchy. Each visit method represents an operation that can be performed on that type.
+2.	Concrete Visitor: Implements the Visitor interface, providing specific implementations of each visit method. These are the actual operations performed on elements in the object structure.
+3.	Element Interface: Declares an accept method that takes a Visitor as an argument. This method allows a visitor to access the element.
+4.	Concrete Elements: Implement the Element interface and the accept method. When accept is called, it passes the current instance to the visitor’s corresponding visit method.
+5.	Object Structure: Usually a collection of elements, such as a list or tree, that can be iterated over. Each element in the structure “accepts” a visitor, which performs its operation.
 
 
