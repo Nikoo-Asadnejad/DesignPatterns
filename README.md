@@ -160,6 +160,37 @@ Types of Proxies:
 ## Behavioral Patterns:</h2>
 
 ### Chain of Responsibility:
+The Chain of Responsibility design pattern is a behavioral design pattern used to process a request through a sequence of potential handlers. Each handler in the chain can either process the request, pass it along to the next handler, or stop further processing.
+
+#### Key Characteristics:
+
+1.Decoupling of Senders and Receivers: The pattern allows the sender of a request to pass it along a chain of handlers without needing to know which handler will ultimately process the request.
+2.Dynamic Composition: Handlers can be added or removed dynamically at runtime, providing flexibility.
+3.Request Handling: Each handler has the opportunity to:
+- Process the request and stop further propagation.
+- Partially handle the request and pass it to the next handler.
+- Pass the request without handling it.
+
+#### Structure:
+
+1. Handler Interface/Abstract Class:
+- Declares a method to handle the request.
+- Optionally includes a reference to the next handler in the chain.
+2. Concrete Handlers:
+- Implement the handler interface or extend the abstract class.
+- Decide whether to process the request or pass it to the next handler.
+3. Client:
+- Initiates the request by sending it to the first handler in the chain.
+
+Advantages:
+1.Flexibility: Handlers can be easily added, removed, or reordered.
+2.Responsibility Sharing: Complex requests can be handled by splitting responsibilities across multiple handlers.
+3.Open/Closed Principle: Adding new handlers doesn’t require modifying existing code.
+
+Disadvantages:
+1.Debugging Complexity: It can be harder to trace how a request is processed as it flows through the chain.
+2.Potential Performance Hit: If the chain is long and no handler processes the request, performance may suffer.
+ 
 ### Command:
 ### Interpreter: 
 <p>
