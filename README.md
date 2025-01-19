@@ -192,6 +192,42 @@ Disadvantages:
 2.Potential Performance Hit: If the chain is long and no handler processes the request, performance may suffer.
  
 ### Command:
+
+The Command design pattern is a behavioral design pattern used to encapsulate a request as an object, thereby allowing users to parameterize objects with different requests, delay or queue a request’s execution, and support undoable operations. It is commonly used in scenarios where you need to decouple the sender of a request from the receiver.
+
+Key Concepts:
+	1.	Command: An interface or abstract class that declares the method to execute the command.
+	2.	ConcreteCommand: A class that implements the Command interface and defines the binding between a Receiver and an action.
+	3.	Receiver: The object that performs the actual work when the command is executed.
+	4.	Invoker: A class responsible for triggering the execution of commands. It can maintain a history of commands for undo/redo functionality.
+	5.	Client: The class that creates and configures the command objects.
+
+Structure:
+	1.	Command Interface:
+	•	Declares a method like execute() that all commands will implement.
+	2.	ConcreteCommand:
+	•	Implements the Command interface.
+	•	Binds a receiver to an action.
+	3.	Invoker:
+	•	Triggers the command using the execute() method.
+	4.	Receiver:
+	•	Knows how to perform the actual operations associated with the request.
+
+
+Use Cases:
+	1.	Undo/Redo functionality (e.g., text editors, graphic applications).
+	2.	Transaction management.
+	3.	Macro recording (sequence of commands).
+	4.	GUI buttons and menu actions.
+
+Advantages:
+	•	Decouples the sender and receiver of requests.
+	•	Supports undo/redo operations easily.
+	•	Enables extensibility by allowing new commands to be added without changing existing code.
+
+Disadvantages:
+	•	Can increase the complexity of the system with additional classes.
+
 ### Interpreter: 
 <p>
 The Interpreter pattern is a behavioral design pattern that defines a representation for a language’s grammar and provides an interpreter to process sentences in that language. This pattern is typically used to interpret expressions from languages with a defined grammar, such as mathematical expressions or simple scripting languages.
