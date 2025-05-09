@@ -360,7 +360,6 @@ This pattern is particularly useful when an object can have multiple states, and
 -	When state-specific behavior needs to be reused or extended easily.
 
 
-
 ### Strategy: 
 The Strategy Pattern is a behavioral design pattern that enables selecting an algorithm’s behavior at runtime. Instead of implementing a single algorithm directly, the code defines a family of algorithms, encapsulates each one as a separate class, and makes them interchangeable. The Strategy pattern lets you swap the algorithm or logic used within an object without altering the client code.
 
@@ -369,7 +368,6 @@ The Strategy Pattern is a behavioral design pattern that enables selecting an al
 - When you need to avoid conditional logic (if, switch) to select the algorithm.
 - When you want to separate the algorithm logic from the context (the object using the algorithm).
   
-### Template Method:  
 
 ### Visitor: 
 The Visitor pattern is a behavioral design pattern that allows you to add further operations to objects without modifying their structure. It does this by separating operations from the objects on which they operate. The pattern involves creating a Visitor interface with visit methods for each type in an object structure. Classes that want to support new operations “accept” a visitor, allowing it to perform actions on them. This pattern is especially useful when you want to add new operations to classes that have an existing hierarchy without modifying the classes themselves.
